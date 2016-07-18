@@ -1,0 +1,1560 @@
+- name: "LOW | V-38437 | AUDIT | Automated file system mounting tools must not be enabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38437
+
+- name: "LOW | V-38437 | PATCH | Automated file system mounting tools must not be enabled unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38437
+
+- name: "LOW | V-38438 | AUDIT | Auditing must be enabled at boot by setting a kernel parameter."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38438
+
+- name: "LOW | V-38438 | PATCH | Auditing must be enabled at boot by setting a kernel parameter."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38438
+
+- name: "LOW | V-38455 | AUDIT | The system must use a separate file system for /tmp."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38455
+
+- name: "LOW | V-38455 | PATCH | The system must use a separate file system for /tmp."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38455
+
+- name: "LOW | V-38456 | AUDIT | The system must use a separate file system for /var."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38456
+
+- name: "LOW | V-38456 | PATCH | The system must use a separate file system for /var."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38456
+
+- name: "LOW | V-38463 | AUDIT | The system must use a separate file system for /var/log."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38463
+
+- name: "LOW | V-38463 | PATCH | The system must use a separate file system for /var/log."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38463
+
+- name: "LOW | V-38467 | AUDIT | The system must use a separate file system for the system audit data path."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38467
+
+- name: "LOW | V-38467 | PATCH | The system must use a separate file system for the system audit data path."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38467
+
+- name: "LOW | V-38473 | AUDIT | The system must use a separate file system for user home directories."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38473
+
+- name: "LOW | V-38473 | PATCH | The system must use a separate file system for user home directories."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38473
+
+- name: "LOW | V-38478 | AUDIT | The Red Hat Network Service (rhnsd) service must not be running, unless using RHN or an RHN Satellite."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38478
+
+- name: "LOW | V-38478 | PATCH | The Red Hat Network Service (rhnsd) service must not be running, unless using RHN or an RHN Satellite."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38478
+
+- name: "LOW | V-38480 | AUDIT | Users must be warned 7 days in advance of password expiration."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38480
+
+- name: "LOW | V-38480 | PATCH | Users must be warned 7 days in advance of password expiration."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38480
+
+- name: "LOW | V-38482 | AUDIT | The system must require passwords to contain at least one numeric character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38482
+
+- name: "LOW | V-38482 | PATCH | The system must require passwords to contain at least one numeric character."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38482
+
+- name: "LOW | V-38487 | AUDIT | The system package management tool must cryptographically verify the authenticity of all software packages during installation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38487
+
+- name: "LOW | V-38487 | PATCH | The system package management tool must cryptographically verify the authenticity of all software packages during installation."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38487
+
+- name: "LOW | V-38494 | AUDIT | The system must prevent the root account from logging in from serial consoles."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38494
+
+- name: "LOW | V-38494 | PATCH | The system must prevent the root account from logging in from serial consoles."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38494
+
+- name: "LOW | V-38516 | AUDIT | The Reliable Datagram Sockets (RDS) protocol must be disabled unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38516
+
+- name: "LOW | V-38516 | PATCH | The Reliable Datagram Sockets (RDS) protocol must be disabled unless required."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38516
+
+- name: "LOW | V-38522 | AUDIT | The audit system must be configured to audit all attempts to alter system time through settimeofday."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38522
+
+- name: "LOW | V-38522 | PATCH | The audit system must be configured to audit all attempts to alter system time through settimeofday."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38522
+
+- name: "LOW | V-38525 | AUDIT | The audit system must be configured to audit all attempts to alter system time through stime."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38525
+
+- name: "LOW | V-38525 | PATCH | The audit system must be configured to audit all attempts to alter system time through stime."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38525
+
+- name: "LOW | V-38527 | AUDIT | The audit system must be configured to audit all attempts to alter system time through clock_settime."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38527
+
+- name: "LOW | V-38527 | PATCH | The audit system must be configured to audit all attempts to alter system time through clock_settime."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38527
+
+- name: "LOW | V-38528 | AUDIT | The system must log Martian packets."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38528
+
+- name: "LOW | V-38528 | PATCH | The system must log Martian packets."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38528
+
+- name: "LOW | V-38530 | AUDIT | The audit system must be configured to audit all attempts to alter system time through /etc/localtime."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38530
+
+- name: "LOW | V-38530 | PATCH | The audit system must be configured to audit all attempts to alter system time through /etc/localtime."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38530
+
+- name: "LOW | V-38531 | AUDIT | The operating system must automatically audit account creation."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38531
+
+- name: "LOW | V-38531 | PATCH | The operating system must automatically audit account creation."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38531
+
+- name: "LOW | V-38533 | AUDIT | The system must ignore ICMPv4 redirect messages by default."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38533
+
+- name: "LOW | V-38533 | PATCH | The system must ignore ICMPv4 redirect messages by default."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38533
+
+- name: "LOW | V-38534 | AUDIT | The operating system must automatically audit account modification."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38534
+
+- name: "LOW | V-38534 | PATCH | The operating system must automatically audit account modification."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38534
+
+- name: "LOW | V-38535 | AUDIT | The system must not respond to ICMPv4 sent to a broadcast address."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38535
+
+- name: "LOW | V-38535 | PATCH | The system must not respond to ICMPv4 sent to a broadcast address."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38535
+
+- name: "LOW | V-38536 | AUDIT | The operating system must automatically audit account disabling actions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38536
+
+- name: "LOW | V-38536 | PATCH | The operating system must automatically audit account disabling actions."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38536
+
+- name: "LOW | V-38537 | AUDIT | The system must ignore ICMPv4 bogus error responses."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38537
+
+- name: "LOW | V-38537 | PATCH | The system must ignore ICMPv4 bogus error responses."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38537
+
+- name: "LOW | V-38538 | AUDIT | The operating system must automatically audit account termination."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38538
+
+- name: "LOW | V-38538 | PATCH | The operating system must automatically audit account termination."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38538
+
+- name: "LOW | V-38541 | AUDIT | The audit system must be configured to audit modifications to the systems Mandatory Access Control (MAC) configuration (SELinux)."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38541
+
+- name: "LOW | V-38541 | PATCH | The audit system must be configured to audit modifications to the systems Mandatory Access Control (MAC) configuration (SELinux)."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38541
+
+- name: "LOW | V-38543 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using chmod."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38543
+
+- name: "LOW | V-38543 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using chmod."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38543
+
+- name: "LOW | V-38545 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using chown."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38545
+
+- name: "LOW | V-38545 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using chown."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38545
+
+- name: "LOW | V-38547 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using fchmod."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38547
+
+- name: "LOW | V-38547 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using fchmod."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38547
+
+- name: "LOW | V-38550 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using fchmodat."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38550
+
+- name: "LOW | V-38550 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using fchmodat."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38550
+
+- name: "LOW | V-38552 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using fchown."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38552
+
+- name: "LOW | V-38552 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using fchown."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38552
+
+- name: "LOW | V-38554 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using fchownat."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38554
+
+- name: "LOW | V-38554 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using fchownat."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38554
+
+- name: "LOW | V-38556 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using fremovexattr."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38556
+
+- name: "LOW | V-38556 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using fremovexattr."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38556
+
+- name: "LOW | V-38557 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using fsetxattr."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38557
+
+- name: "LOW | V-38557 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using fsetxattr."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38557
+
+- name: "LOW | V-38558 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using lchown."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38558
+
+- name: "LOW | V-38558 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using lchown."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38558
+
+- name: "LOW | V-38559 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using lremovexattr."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38559
+
+- name: "LOW | V-38559 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using lremovexattr."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38559
+
+- name: "LOW | V-38561 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using lsetxattr."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38561
+
+- name: "LOW | V-38561 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using lsetxattr."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38561
+
+- name: "LOW | V-38563 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using removexattr."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38563
+
+- name: "LOW | V-38563 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using removexattr."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38563
+
+- name: "LOW | V-38565 | AUDIT | The audit system must be configured to audit all discretionary access control permission modifications using setxattr."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38565
+
+- name: "LOW | V-38565 | PATCH | The audit system must be configured to audit all discretionary access control permission modifications using setxattr."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38565
+
+- name: "LOW | V-38568 | AUDIT | The audit system must be configured to audit successful file system mounts."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38568
+
+- name: "LOW | V-38568 | PATCH | The audit system must be configured to audit successful file system mounts."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38568
+
+- name: "LOW | V-38569 | AUDIT | The system must require passwords to contain at least one uppercase alphabetic character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38569
+
+- name: "LOW | V-38569 | PATCH | The system must require passwords to contain at least one uppercase alphabetic character."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38569
+
+- name: "LOW | V-38570 | AUDIT | The system must require passwords to contain at least one special character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38570
+
+- name: "LOW | V-38570 | PATCH | The system must require passwords to contain at least one special character."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38570
+
+- name: "LOW | V-38571 | AUDIT | The system must require passwords to contain at least one lowercase alphabetic character."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38571
+
+- name: "LOW | V-38571 | PATCH | The system must require passwords to contain at least one lowercase alphabetic character."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38571
+
+- name: "LOW | V-38572 | AUDIT | The system must require at least eight characters be changed between the old and new passwords during a password change."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38572
+
+- name: "LOW | V-38572 | PATCH | The system must require at least eight characters be changed between the old and new passwords during a password change."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38572
+
+- name: "LOW | V-38575 | AUDIT | The audit system must be configured to audit user deletions of files and programs."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38575
+
+- name: "LOW | V-38575 | PATCH | The audit system must be configured to audit user deletions of files and programs."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38575
+
+- name: "LOW | V-38578 | AUDIT | The audit system must be configured to audit changes to the /etc/sudoers file."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38578
+
+- name: "LOW | V-38578 | PATCH | The audit system must be configured to audit changes to the /etc/sudoers file."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38578
+
+- name: "LOW | V-38584 | AUDIT | The xinetd service must be uninstalled if no network services utilizing it are enabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38584
+
+- name: "LOW | V-38584 | PATCH | The xinetd service must be uninstalled if no network services utilizing it are enabled."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38584
+
+- name: "LOW | V-38590 | AUDIT | The system must allow locking of the console screen in text mode."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38590
+
+- name: "LOW | V-38590 | PATCH | The system must allow locking of the console screen in text mode."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38590
+
+- name: "LOW | V-38608 | AUDIT | The SSH daemon must set a timeout interval on idle sessions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38608
+
+- name: "LOW | V-38608 | PATCH | The SSH daemon must set a timeout interval on idle sessions."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38608
+
+- name: "LOW | V-38610 | AUDIT | The SSH daemon must set a timeout count on idle sessions."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38610
+
+- name: "LOW | V-38610 | PATCH | The SSH daemon must set a timeout count on idle sessions."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38610
+
+- name: "LOW | V-38616 | AUDIT | The SSH daemon must not permit user environment settings."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38616
+
+- name: "LOW | V-38616 | PATCH | The SSH daemon must not permit user environment settings."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38616
+
+- name: "LOW | V-38618 | AUDIT | The avahi service must be disabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38618
+
+- name: "LOW | V-38618 | PATCH | The avahi service must be disabled."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38618
+
+- name: "LOW | V-38627 | AUDIT | The openldap-servers package must not be installed unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38627
+
+- name: "LOW | V-38627 | PATCH | The openldap-servers package must not be installed unless required."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38627
+
+- name: "LOW | V-38635 | AUDIT | The audit system must be configured to audit all attempts to alter system time through adjtimex."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38635
+
+- name: "LOW | V-38635 | PATCH | The audit system must be configured to audit all attempts to alter system time through adjtimex."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38635
+
+- name: "LOW | V-38639 | AUDIT | The system must display a publicly-viewable pattern during a graphical desktop environment session lock."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38639
+
+- name: "LOW | V-38639 | PATCH | The system must display a publicly-viewable pattern during a graphical desktop environment session lock."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38639
+
+- name: "LOW | V-38640 | AUDIT | The Automatic Bug Reporting Tool (abrtd) service must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38640
+
+- name: "LOW | V-38640 | PATCH | The Automatic Bug Reporting Tool (abrtd) service must not be running."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38640
+
+- name: "LOW | V-38641 | AUDIT | The atd service must be disabled."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38641
+
+- name: "LOW | V-38641 | PATCH | The atd service must be disabled."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38641
+
+- name: "LOW | V-38642 | AUDIT | The system default umask for daemons must be 027 or 022."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38642
+
+- name: "LOW | V-38642 | PATCH | The system default umask for daemons must be 027 or 022."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38642
+
+- name: "LOW | V-38644 | AUDIT | The ntpdate service must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38644
+
+- name: "LOW | V-38644 | PATCH | The ntpdate service must not be running."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38644
+
+- name: "LOW | V-38645 | AUDIT | The system default umask in /etc/login.defs must be 077."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38645
+
+- name: "LOW | V-38645 | PATCH | The system default umask in /etc/login.defs must be 077."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38645
+
+- name: "LOW | V-38646 | AUDIT | The oddjobd service must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38646
+
+- name: "LOW | V-38646 | PATCH | The oddjobd service must not be running."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38646
+
+- name: "LOW | V-38647 | AUDIT | The system default umask in /etc/profile must be 077."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38647
+
+- name: "LOW | V-38647 | PATCH | The system default umask in /etc/profile must be 077."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38647
+
+- name: "LOW | V-38648 | AUDIT | The qpidd service must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38648
+
+- name: "LOW | V-38648 | PATCH | The qpidd service must not be running."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38648
+
+- name: "LOW | V-38649 | AUDIT | The system default umask for the csh shell must be 077."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38649
+
+- name: "LOW | V-38649 | PATCH | The system default umask for the csh shell must be 077."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38649
+
+- name: "LOW | V-38650 | AUDIT | The rdisc service must not be running."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38650
+
+- name: "LOW | V-38650 | PATCH | The rdisc service must not be running."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38650
+
+- name: "LOW | V-38651 | AUDIT | The system default umask for the bash shell must be 077."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38651
+
+- name: "LOW | V-38651 | PATCH | The system default umask for the bash shell must be 077."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38651
+
+- name: "LOW | V-38656 | AUDIT | The system must use SMB client signing for connecting to samba servers using smbclient."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38656
+
+- name: "LOW | V-38656 | PATCH | The system must use SMB client signing for connecting to samba servers using smbclient."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38656
+
+- name: "LOW | V-38669 | AUDIT | The postfix service must be enabled for mail delivery."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38669
+
+- name: "LOW | V-38669 | PATCH | The postfix service must be enabled for mail delivery."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38669
+
+- name: "LOW | V-38672 | AUDIT | The netconsole service must be disabled unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38672
+
+- name: "LOW | V-38672 | PATCH | The netconsole service must be disabled unless required."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38672
+
+- name: "LOW | V-38675 | AUDIT | Process core dumps must be disabled unless needed."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38675
+
+- name: "LOW | V-38675 | PATCH | Process core dumps must be disabled unless needed."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38675
+
+- name: "LOW | V-38676 | AUDIT | The xorg-x11-server-common (X Windows) package must not be installed, unless required."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38676
+
+- name: "LOW | V-38676 | PATCH | The xorg-x11-server-common (X Windows) package must not be installed, unless required."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38676
+
+- name: "LOW | V-38684 | AUDIT | The system must limit users to 10 simultaneous system logins, or a site-defined number, in accordance with operational requirements."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38684
+
+- name: "LOW | V-38684 | PATCH | The system must limit users to 10 simultaneous system logins, or a site-defined number, in accordance with operational requirements."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38684
+
+- name: "LOW | V-38687 | AUDIT | The system must provide VPN connectivity for communications over untrusted networks."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38687
+
+- name: "LOW | V-38687 | PATCH | The system must provide VPN connectivity for communications over untrusted networks."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38687
+
+- name: "LOW | V-38692 | AUDIT | Accounts must be locked upon 35 days of inactivity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38692
+
+- name: "LOW | V-38692 | PATCH | Accounts must be locked upon 35 days of inactivity."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38692
+
+- name: "LOW | V-38694 | AUDIT | The operating system must manage information system identifiers for users and devices by disabling the user identifier after an organization defined time period of inactivity."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38694
+
+- name: "LOW | V-38694 | PATCH | The operating system must manage information system identifiers for users and devices by disabling the user identifier after an organization defined time period of inactivity."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38694
+
+- name: "LOW | V-38697 | AUDIT | The sticky bit must be set on all public directories."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38697
+
+- name: "LOW | V-38697 | PATCH | The sticky bit must be set on all public directories."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38697
+
+- name: "LOW | V-38699 | AUDIT | All public directories must be owned by a system account."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-38699
+
+- name: "LOW | V-38699 | PATCH | All public directories must be owned by a system account."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-38699
+
+- name: "LOW | V-51369 | AUDIT | The system must use a Linux Security Module configured to limit the privileges of system services."
+  command: true
+  register: result
+  always_run: yes
+  changed_when: no
+  ignore_errors: yes
+  tags:
+      - cat3
+      - low
+      - audit
+      - V-51369
+
+- name: "LOW | V-51369 | PATCH | The system must use a Linux Security Module configured to limit the privileges of system services."
+  command: true
+  tags:
+      - cat3
+      - low
+      - patch
+      - V-51369
+
