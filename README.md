@@ -3,7 +3,7 @@ BENCHPARSE
 
 Quick and dirty script to parse benchmarks in XCCDF format and output valid Ansible tasks in YAML format. The output format is not configurable (yet!) without editing the Python source and it uses the format defined for the [ansible-lockdown][0] project benchmark roles.
 
-Example output is included in the [examples][1] folder.
+Example output is included in the [examples](examples) folder.
 
 ## Instructions
 
@@ -33,4 +33,3 @@ Example output is included in the [examples][1] folder.
 
 
 [0]:https://github.com/ansible/ansible-lockdown
-[1]:https://github.com/ansible/ansible-lockdown
