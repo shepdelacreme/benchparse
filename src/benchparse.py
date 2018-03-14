@@ -64,7 +64,7 @@ class StigBenchmark(object):
                                                           stig_id,
                                                           check_type.upper(),
                                                           rule_title))
-        outf.write('      command: true\n')
+        outf.write('      command: "true"\n')
         if check_type.upper() == 'AUDIT':
             outf.write('      register: result\n')
             outf.write('      always_run: yes\n')
