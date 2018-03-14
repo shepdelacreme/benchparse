@@ -52,6 +52,9 @@ class StigBenchmark(object):
                 for check in ['AUDIT', 'PATCH']:
                     self.write_rule(rule_id, stig_id, rule_sev, rule_title,
                                     check, outf)
+                outf.write('  when:\n')
+                outf.write('      - {}\n'.format(stig_id.replace('-',
+                                                              '_').lower()))
                 outf.write('  tags:\n')
                 outf.write('      - {}\n'.format(self.sev_to_cat(rule_sev)))
                 outf.write('      - {}\n'.format(rule_sev))
