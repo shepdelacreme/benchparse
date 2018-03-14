@@ -56,6 +56,7 @@ class StigBenchmark(object):
                 outf.write('      - {}\n'.format(self.sev_to_cat(rule_sev)))
                 outf.write('      - {}\n'.format(rule_sev))
                 outf.write('      - {}\n'.format(stig_id))
+                outf.write('      - notimplemented\n')
                 outf.write('\n')
 
     def write_rule(self, rule_id, stig_id, rule_sev, rule_title,
@@ -70,6 +71,8 @@ class StigBenchmark(object):
             outf.write('      always_run: yes\n')
             outf.write('      changed_when: no\n')
             outf.write('      ignore_errors: yes\n')
+        outf.write('      with_items:\n')
+        outf.write('          - not implemented\n')
         outf.write('      tags:\n')
         outf.write('          - {}\n'.format(check_type.lower()))
 
