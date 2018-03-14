@@ -41,18 +41,18 @@ class StigBenchmark(object):
             rule_sev = group['Rule']['@severity']
             rule_sev_group = self.sev_to_cat(rule_sev)
             rule_title = group['Rule']['title'].replace('"', '\'')
-            group_id = group['@id']
+            stig_id = group['Rule']['version']
             outfile = os.path.join(path, rule_sev_group + '.yml')
 
             with open(outfile, 'a') as outf:
                 for check in ['AUDIT', 'PATCH']:
-                    self.write_rule(rule_id, group_id, rule_sev, rule_title,
+                    self.write_rule(rule_id, stig_id, rule_sev, rule_title,
                                     check, outf)
 
-    def write_rule(self, rule_id, rule_num, rule_sev, rule_title,
+    def write_rule(self, rule_id, stig_id, rule_sev, rule_title,
                    check_type, outf):
         outf.write('- name: "{} | {} | {} | {}"\n'.format(rule_sev.upper(),
-                                                          rule_num,
+                                                          stig_id,
                                                           check_type.upper(),
                                                           rule_title))
         outf.write('  command: true\n')
@@ -65,7 +65,7 @@ class StigBenchmark(object):
         outf.write('      - {}\n'.format(self.sev_to_cat(rule_sev)))
         outf.write('      - {}\n'.format(rule_sev))
         outf.write('      - {}\n'.format(check_type.lower()))
-        outf.write('      - {}\n'.format(rule_num))
+        outf.write('      - {}\n'.format(stig_id))
         outf.write('\n')
 
 
