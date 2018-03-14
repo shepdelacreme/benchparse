@@ -70,7 +70,8 @@ class StigBenchmark(object):
                                                           rule_title))
         outf.write('      command: "true"\n')
         if check_type.upper() == 'AUDIT':
-            outf.write('      register: result\n')
+            outf.write('      register: {}_audit\n'.format(stig_id.replace('-',
+                                                                  '_').lower()))
             outf.write('      check_mode: no\n')
         outf.write('      changed_when: no\n')
         outf.write('      with_items:\n')
