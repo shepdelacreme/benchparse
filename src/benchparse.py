@@ -45,28 +45,33 @@ class StigBenchmark(object):
             outfile = os.path.join(path, rule_sev_group + '.yml')
 
             with open(outfile, 'a') as outf:
+                outf.write('- name: "{} | {} | {}"\n'.format(rule_sev.upper(),
+                                                          stig_id,
+                                                          rule_title))
+                outf.write('  block:\n')
                 for check in ['AUDIT', 'PATCH']:
                     self.write_rule(rule_id, stig_id, rule_sev, rule_title,
                                     check, outf)
+                outf.write('  tags:\n')
+                outf.write('      - {}\n'.format(self.sev_to_cat(rule_sev)))
+                outf.write('      - {}\n'.format(rule_sev))
+                outf.write('      - {}\n'.format(stig_id))
+                outf.write('\n')
 
     def write_rule(self, rule_id, stig_id, rule_sev, rule_title,
                    check_type, outf):
-        outf.write('- name: "{} | {} | {} | {}"\n'.format(rule_sev.upper(),
+        outf.write('    - name: "{} | {} | {} | {}"\n'.format(rule_sev.upper(),
                                                           stig_id,
                                                           check_type.upper(),
                                                           rule_title))
-        outf.write('  command: true\n')
+        outf.write('      command: true\n')
         if check_type.upper() == 'AUDIT':
-            outf.write('  register: result\n')
-            outf.write('  always_run: yes\n')
-            outf.write('  changed_when: no\n')
-            outf.write('  ignore_errors: yes\n')
-        outf.write('  tags:\n')
-        outf.write('      - {}\n'.format(self.sev_to_cat(rule_sev)))
-        outf.write('      - {}\n'.format(rule_sev))
-        outf.write('      - {}\n'.format(check_type.lower()))
-        outf.write('      - {}\n'.format(stig_id))
-        outf.write('\n')
+            outf.write('      register: result\n')
+            outf.write('      always_run: yes\n')
+            outf.write('      changed_when: no\n')
+            outf.write('      ignore_errors: yes\n')
+        outf.write('      tags:\n')
+        outf.write('          - {}\n'.format(check_type.lower()))
 
 
 class CisBenchmark(object):
