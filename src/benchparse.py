@@ -64,20 +64,20 @@ class StigBenchmark(object):
 
     def write_rule(self, rule_id, stig_id, rule_sev, rule_title,
                    check_type, outf):
-        outf.write('    - name: "{} | {} | {} | {}"\n'.format(rule_sev.upper(),
+        outf.write('      - name: "{} | {} | {} | {}"\n'.format(rule_sev.upper(),
                                                           stig_id,
                                                           check_type.upper(),
                                                           rule_title))
-        outf.write('      command: "true"\n')
+        outf.write('        command: "true"\n')
         if check_type.upper() == 'AUDIT':
-            outf.write('      register: {}_audit\n'.format(stig_id.replace('-',
+            outf.write('        register: {}_audit\n'.format(stig_id.replace('-',
                                                                   '_').lower()))
-            outf.write('      check_mode: no\n')
-        outf.write('      changed_when: no\n')
-        outf.write('      with_items:\n')
-        outf.write('          - not implemented\n')
-        outf.write('      tags:\n')
-        outf.write('          - {}\n'.format(check_type.lower()))
+            outf.write('        check_mode: no\n')
+        outf.write('        changed_when: no\n')
+        outf.write('        with_items:\n')
+        outf.write('            - not implemented\n')
+        outf.write('        tags:\n')
+        outf.write('            - {}\n'.format(check_type.lower()))
 
 
 class CisBenchmark(object):
