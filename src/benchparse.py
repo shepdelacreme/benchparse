@@ -56,8 +56,6 @@ class StigBenchmark(object):
                 outf.write('      - {}\n'.format(stig_id.replace('-',
                                                               '_').lower()))
                 outf.write('  tags:\n')
-                outf.write('      - {}\n'.format(self.sev_to_cat(rule_sev)))
-                outf.write('      - {}\n'.format(rule_sev))
                 outf.write('      - {}\n'.format(stig_id))
                 outf.write('      - notimplemented\n')
                 outf.write('\n')
