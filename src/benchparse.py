@@ -76,8 +76,6 @@ class StigBenchmark(object):
         outf.write('        changed_when: no\n')
         outf.write('        with_items:\n')
         outf.write('            - not implemented\n')
-        outf.write('        tags:\n')
-        outf.write('            - {}\n'.format(check_type.lower()))
 
 
 class CisBenchmark(object):
