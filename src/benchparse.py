@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+
 # Import stuff I need to use
 import sys
 import argparse
@@ -9,7 +11,7 @@ import os.path
 try:
     import xmltodict
 except ImportError:
-    print 'xmltodict required. Install using `pip install xmltodict`'
+    print('xmltodict required. Install using `pip install xmltodict`')
 
 
 class StigBenchmark(object):
