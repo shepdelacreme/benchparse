@@ -62,6 +62,12 @@ class StigBenchmark(object):
                 outf.write('      - notimplemented\n')
                 outf.write('\n')
 
+            # output STIG-ID to Rule-ID mapping
+            outfile = os.path.join(path, 'rule-id.yml')
+            with open(outfile, 'a') as outf:
+                outf.write('{}_rule_id: {}\n'.format(stig_id.replace('-', '_').lower(),
+                        rule_id))
+
     def write_rule(self, rule_id, stig_id, rule_sev, rule_title,
                    check_type, outf):
         outf.write('      - name: "{} | {} | {} | {}"\n'.format(rule_sev.upper(),
